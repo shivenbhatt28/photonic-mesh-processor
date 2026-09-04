@@ -1,6 +1,5 @@
 # Programmable Unitary Photonic Processor — Clements Mesh Design & Fab-Tolerance Study
 
-![tests](https://github.com/USER/REPO/actions/workflows/tests.yml/badge.svg)
 
 A simulation and design study of the **4×4 programmable photonic processor** —
 the Mach–Zehnder-interferometer (MZI) mesh architecture used in photonic AI
