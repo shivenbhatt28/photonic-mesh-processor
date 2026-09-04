@@ -1,0 +1,29 @@
+4x4 Clements-mesh programmable processor - study summary
+============================================================
+Coupler model                             : femwell FEM supermode analysis
+MZIs in mesh                              : 6
+Mesh transmission (0.10 dB/DC, 0.05 dB/PS): -0.90 dB
+
+Fidelity vs coupler splitting error (sigma_phase = 0):
+  sigma_c =  0.0%  ->  F = 0.99958 +/- 0.00017
+  sigma_c =  0.5%  ->  F = 0.99943 +/- 0.00019
+  sigma_c =  1.0%  ->  F = 0.99898 +/- 0.00033
+  sigma_c =  2.0%  ->  F = 0.99709 +/- 0.00123
+  sigma_c =  3.0%  ->  F = 0.99413 +/- 0.00316
+  sigma_c =  5.0%  ->  F = 0.98503 +/- 0.00690
+
+Fidelity vs phase error (ideal couplers):
+  sigma_p = 0.00 rad ->  F = 0.99958 +/- 0.00017
+  sigma_p = 0.01 rad ->  F = 0.99935 +/- 0.00021
+  sigma_p = 0.02 rad ->  F = 0.99869 +/- 0.00060
+  sigma_p = 0.05 rad ->  F = 0.99402 +/- 0.00300
+  sigma_p = 0.10 rad ->  F = 0.97694 +/- 0.01189
+  sigma_p = 0.20 rad ->  F = 0.91397 +/- 0.04630
+
+Headline combined case (sigma_c = 2%, sigma_p = 0.05 rad):
+  F = 0.99169 +/- 0.00380
+
+Self-calibration vs fixed +/-2% coupler errors (80 chips):
+  uncalibrated  F = 0.99720 (worst 0.99004)
+  calibrated    F = 0.99958 (worst 0.99916)
+  mean infidelity reduced by 7x

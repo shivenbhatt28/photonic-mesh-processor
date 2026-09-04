@@ -1,0 +1,12 @@
+# Extra dependencies for the coupler characterization step (fdtd/).
+# The core mesh package (photonic_mesh/) needs only requirements.txt.
+femwell>=0.1.12        # FEM eigenmode (supermode) solver -> coupler_modes.py
+# gmsh is pulled in by femwell; on headless Linux you may also need system libs:
+#   apt-get install -y libglu1-mesa libxft2 libxinerama1 libxcursor1 \
+#                      libxrender1 libxfixes3 libgl1 libxi6
+#
+# The FDTD cross-check (fdtd/coupler_fdtd_meep.py) uses Meep, installed via
+# conda (not pip):   conda install -c conda-forge pymeep
+
+gdsfactory>=9.0        # parametric layout -> GDS (layout/)
+# klayout Python API is pulled in by gdsfactory (used by layout/drc_check.py)

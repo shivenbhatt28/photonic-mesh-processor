@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+.DS_Store
+# Keep results/ committed (the figures are the portfolio artifact), but ignore
+# stray local files:
+results/*.tmp
