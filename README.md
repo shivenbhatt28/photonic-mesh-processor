@@ -68,17 +68,17 @@ Mesh transmission at the assumed per-element losses: **−0.90 dB**.
 Three findings worth stating explicitly, because they are the point of the
 study rather than the plots:
 
-- **The zero-error fidelity floor of 0.99958 is physics, not numerics.** In a
-  rectangular mesh, edge modes traverse fewer MZIs than center modes, so
-  uniform per-MZI loss becomes *path-dependent* (differential) loss, which
-  distorts the implemented matrix even with perfect phases. Real designs add
-  loss-balancing sections; the model quantifies exactly how much this costs.
+- **0.99958 Zero-error fidelity floor** In a rectangular mesh, edge modes
+  traverse fewer MZIs than center modes, so uniform per-MZI loss becomes
+  *path-dependent* (differential) loss, which distorts the implemented matrix
+  even with perfect phases. Real designs add loss-balancing sections; the model
+  quantifies exactly how much this costs.
 - **Phase calibration recovers essentially all coupler-error infidelity**
   (~7× reduction in mean infidelity, back to the differential-loss floor).
   This is *why* programmable meshes are manufacturable: the phase shifters
   that program the unitary double as trim knobs for fabrication error.
-- **Phase error hurts more than coupler error at equal magnitude, and it is
-  harder to remove** — coupler error is fixed per chip (calibratable) while
+- **Phase error hurts >> coupler error at equal magnitude**
+  coupler error is fixed per chip (calibratable) while
   phase error is dynamic (thermal crosstalk, DAC resolution), so it sets the
   real accuracy floor.
 
