@@ -77,7 +77,7 @@ study rather than the plots:
   (~7× reduction in mean infidelity, back to the differential-loss floor).
   This is *why* programmable meshes are manufacturable: the phase shifters
   that program the unitary double as trim knobs for fabrication error.
-- **Phase error hurts >> coupler error at equal magnitude**:
+- **Phase error > coupler error at equal magnitude**:
   coupler error is fixed per chip (calibratable) while
   phase error is dynamic (thermal crosstalk, DAC resolution), so it sets the
   real accuracy floor.
